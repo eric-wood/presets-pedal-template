@@ -160,9 +160,6 @@ F 3 "~" H 7850 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7850 4300 7850 4450
-Connection ~ 7850 4450
-Wire Wire Line
 	7850 4450 7850 4500
 Wire Wire Line
 	8000 4300 8000 4150
@@ -215,40 +212,40 @@ Wire Wire Line
 $Comp
 L Switch:SW_SPST SW?
 U 1 1 6091F993
-P 3700 2100
-F 0 "SW?" H 3700 2335 50  0000 C CNN
-F 1 "bypass switch" H 3700 2244 50  0000 C CNN
-F 2 "" H 3700 2100 50  0001 C CNN
-F 3 "~" H 3700 2100 50  0001 C CNN
-	1    3700 2100
+P 8750 1300
+F 0 "SW?" H 8750 1535 50  0000 C CNN
+F 1 "bypass switch" H 8750 1444 50  0000 C CNN
+F 2 "" H 8750 1300 50  0001 C CNN
+F 3 "~" H 8750 1300 50  0001 C CNN
+	1    8750 1300
 	1    0    0    -1  
 $EndComp
-Text Label 4050 2100 0    50   ~ 0
+Text Label 9800 1300 0    50   ~ 0
 bypass_switch
 Wire Wire Line
-	3350 2100 3500 2100
+	8400 1300 8550 1300
 Wire Wire Line
-	4050 2100 3900 2100
-Text Label 3350 2100 2    50   ~ 0
+	9100 1300 8950 1300
+Text Label 8400 1300 2    50   ~ 0
 5V
 $Comp
 L Switch:SW_SPST SW?
 U 1 1 60922E98
-P 3700 2500
-F 0 "SW?" H 3700 2735 50  0000 C CNN
-F 1 "preset switch" H 3700 2644 50  0000 C CNN
-F 2 "" H 3700 2500 50  0001 C CNN
-F 3 "~" H 3700 2500 50  0001 C CNN
-	1    3700 2500
+P 8750 2250
+F 0 "SW?" H 8750 2485 50  0000 C CNN
+F 1 "preset switch" H 8750 2394 50  0000 C CNN
+F 2 "" H 8750 2250 50  0001 C CNN
+F 3 "~" H 8750 2250 50  0001 C CNN
+	1    8750 2250
 	1    0    0    -1  
 $EndComp
-Text Label 4050 2500 0    50   ~ 0
+Text Label 9800 2250 0    50   ~ 0
 preset_switch
 Wire Wire Line
-	3350 2500 3500 2500
+	8400 2250 8550 2250
 Wire Wire Line
-	4050 2500 3900 2500
-Text Label 3350 2500 2    50   ~ 0
+	9100 2250 8950 2250
+Text Label 8400 2250 2    50   ~ 0
 5V
 Text Label 2950 3150 0    50   ~ 0
 bypass_switch
@@ -332,4 +329,84 @@ Text Label 2700 3150 0    50   ~ 0
 mosi
 Text Label 2700 3650 0    50   ~ 0
 rst
+$Comp
+L Device:R R?
+U 1 1 60940E91
+P 9250 1300
+F 0 "R?" V 9043 1300 50  0000 C CNN
+F 1 "100k" V 9134 1300 50  0000 C CNN
+F 2 "" V 9180 1300 50  0001 C CNN
+F 3 "~" H 9250 1300 50  0001 C CNN
+	1    9250 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60942239
+P 9600 1550
+F 0 "C?" H 9715 1596 50  0000 L CNN
+F 1 "1u" H 9715 1505 50  0000 L CNN
+F 2 "" H 9638 1400 50  0001 C CNN
+F 3 "~" H 9600 1550 50  0001 C CNN
+	1    9600 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60943FE3
+P 9600 1700
+F 0 "#PWR?" H 9600 1450 50  0001 C CNN
+F 1 "GND" H 9605 1527 50  0000 C CNN
+F 2 "" H 9600 1700 50  0001 C CNN
+F 3 "" H 9600 1700 50  0001 C CNN
+	1    9600 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 1300 9600 1300
+Wire Wire Line
+	9600 1300 9600 1400
+Connection ~ 9600 1300
+Wire Wire Line
+	9600 1300 9800 1300
+$Comp
+L Device:R R?
+U 1 1 6094831F
+P 9250 2250
+F 0 "R?" V 9043 2250 50  0000 C CNN
+F 1 "100k" V 9134 2250 50  0000 C CNN
+F 2 "" V 9180 2250 50  0001 C CNN
+F 3 "~" H 9250 2250 50  0001 C CNN
+	1    9250 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60948325
+P 9600 2500
+F 0 "C?" H 9715 2546 50  0000 L CNN
+F 1 "1u" H 9715 2455 50  0000 L CNN
+F 2 "" H 9638 2350 50  0001 C CNN
+F 3 "~" H 9600 2500 50  0001 C CNN
+	1    9600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6094832B
+P 9600 2650
+F 0 "#PWR?" H 9600 2400 50  0001 C CNN
+F 1 "GND" H 9605 2477 50  0000 C CNN
+F 2 "" H 9600 2650 50  0001 C CNN
+F 3 "" H 9600 2650 50  0001 C CNN
+	1    9600 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 2250 9600 2250
+Wire Wire Line
+	9600 2250 9600 2350
+Connection ~ 9600 2250
+Wire Wire Line
+	9600 2250 9800 2250
 $EndSCHEMATC
