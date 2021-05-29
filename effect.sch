@@ -665,17 +665,6 @@ F 3 "" H 6450 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C13
-U 1 1 60D39B10
-P 8650 1650
-F 0 "C13" H 8768 1696 50  0000 L CNN
-F 1 "47u" H 8768 1605 50  0000 L CNN
-F 2 "" H 8688 1500 50  0001 C CNN
-F 3 "~" H 8650 1650 50  0001 C CNN
-	1    8650 1650
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR022
 U 1 1 60D3A720
 P 8650 1800
@@ -782,4 +771,15 @@ Wire Wire Line
 Connection ~ 2400 1750
 Wire Wire Line
 	2400 1750 2400 2450
+$Comp
+L Device:C C?
+U 1 1 60E2FADA
+P 8650 1650
+F 0 "C?" H 8765 1696 50  0000 L CNN
+F 1 "47u" H 8765 1605 50  0000 L CNN
+F 2 "" H 8688 1500 50  0001 C CNN
+F 3 "~" H 8650 1650 50  0001 C CNN
+	1    8650 1650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

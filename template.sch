@@ -50,8 +50,6 @@ Text Label 9800 1300 0    50   ~ 0
 bypass_switch
 Wire Wire Line
 	8850 1300 9000 1300
-Text Label 8850 1300 2    50   ~ 0
-5V
 $Comp
 L Switch:SW_SPST SW2
 U 1 1 60922E98
@@ -67,8 +65,6 @@ Text Label 9800 2250 0    50   ~ 0
 preset_switch
 Wire Wire Line
 	8850 2250 9000 2250
-Text Label 8850 2250 2    50   ~ 0
-5V
 Text Label 4950 3150 0    50   ~ 0
 bypass_switch
 Text Label 4950 3250 0    50   ~ 0
@@ -706,17 +702,6 @@ F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 1750 950 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:CP C2
-U 1 1 60D34350
-P 2200 1200
-F 0 "C2" H 2318 1246 50  0000 L CNN
-F 1 "100u" H 2318 1155 50  0000 L CNN
-F 2 "" H 2238 1050 50  0001 C CNN
-F 3 "~" H 2200 1200 50  0001 C CNN
-	1    2200 1200
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR05
 U 1 1 60D34D4F
 P 2200 1350
@@ -731,17 +716,6 @@ Wire Wire Line
 	1900 950  2200 950 
 Wire Wire Line
 	2200 950  2200 1050
-$Comp
-L Device:CP C4
-U 1 1 60D3F51B
-P 3050 2700
-F 0 "C4" H 3168 2746 50  0000 L CNN
-F 1 "47u" H 3168 2655 50  0000 L CNN
-F 2 "" H 3088 2550 50  0001 C CNN
-F 3 "~" H 3050 2700 50  0001 C CNN
-	1    3050 2700
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C3
 U 1 1 60D400E3
@@ -855,4 +829,52 @@ Text GLabel 2350 950  2    50   Input ~ 0
 Wire Wire Line
 	2350 950  2200 950 
 Connection ~ 2200 950 
+$Comp
+L power:GND #PWR?
+U 1 1 60E185E6
+P 8850 1400
+F 0 "#PWR?" H 8850 1150 50  0001 C CNN
+F 1 "GND" H 8855 1227 50  0000 C CNN
+F 2 "" H 8850 1400 50  0001 C CNN
+F 3 "" H 8850 1400 50  0001 C CNN
+	1    8850 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 1400 8850 1300
+$Comp
+L power:GND #PWR?
+U 1 1 60E1D76B
+P 8850 2350
+F 0 "#PWR?" H 8850 2100 50  0001 C CNN
+F 1 "GND" H 8855 2177 50  0000 C CNN
+F 2 "" H 8850 2350 50  0001 C CNN
+F 3 "" H 8850 2350 50  0001 C CNN
+	1    8850 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 2350 8850 2250
+$Comp
+L Device:C C?
+U 1 1 60E28EBF
+P 3050 2700
+F 0 "C?" H 3165 2746 50  0000 L CNN
+F 1 "10u" H 3165 2655 50  0000 L CNN
+F 2 "" H 3088 2550 50  0001 C CNN
+F 3 "~" H 3050 2700 50  0001 C CNN
+	1    3050 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60E30D9E
+P 2200 1200
+F 0 "C?" H 2315 1246 50  0000 L CNN
+F 1 "10u" H 2315 1155 50  0000 L CNN
+F 2 "" H 2238 1050 50  0001 C CNN
+F 3 "~" H 2200 1200 50  0001 C CNN
+	1    2200 1200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
