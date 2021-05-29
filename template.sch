@@ -850,4 +850,9 @@ F 3 "" H 1800 2400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1350 2400 1350 2350
+Text GLabel 2350 950  2    50   Input ~ 0
+9V
+Wire Wire Line
+	2350 950  2200 950 
+Connection ~ 2200 950 
 $EndSCHEMATC
