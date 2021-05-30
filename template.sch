@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATtiny:ATtiny85-20PU U2
-U 1 1 60917AD6
-P 4000 3450
-F 0 "U2" H 3471 3496 50  0000 R CNN
-F 1 "ATtiny85-20PU" H 3471 3405 50  0000 R CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 4000 3450 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 4000 3450 50  0001 C CNN
-	1    4000 3450
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR07
 U 1 1 60918D54
 P 4000 4050
@@ -507,7 +496,7 @@ U 1 1 60CBEC11
 P 3900 1150
 F 0 "J2" H 3900 1500 50  0000 C CNN
 F 1 "input" H 3900 1400 50  0000 C CNN
-F 2 "" H 3900 1150 50  0001 C CNN
+F 2 "Connector_Audio:Jack_6.35mm_Neutrik_NMJ4HCD2_Horizontal" H 3900 1150 50  0001 C CNN
 F 3 "~" H 3900 1150 50  0001 C CNN
 	1    3900 1150
 	1    0    0    -1  
@@ -539,7 +528,7 @@ U 1 1 60CC824C
 P 4650 1150
 F 0 "J3" H 4650 1500 50  0000 C CNN
 F 1 "output" H 4650 1400 50  0000 C CNN
-F 2 "" H 4650 1150 50  0001 C CNN
+F 2 "Connector_Audio:Jack_6.35mm_Neutrik_NMJ4HCD2_Horizontal" H 4650 1150 50  0001 C CNN
 F 3 "~" H 4650 1150 50  0001 C CNN
 	1    4650 1150
 	1    0    0    -1  
@@ -767,6 +756,7 @@ F 0 "U1" H 1350 2292 50  0000 C CNN
 F 1 "AMS1117-5.0" H 1350 2201 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 1350 2250 50  0001 C CNN
 F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 1450 1800 50  0001 C CNN
+F 4 "C6187" H 1350 2050 50  0001 C CNN "LCSC"
 	1    1350 2050
 	1    0    0    -1  
 $EndComp
@@ -885,5 +875,16 @@ F 3 "~" H 1750 950 50  0001 C CNN
 F 4 "C2480" H 1750 950 50  0001 C CNN "LCSC"
 	1    1750 950 
 	-1   0    0    1   
+$EndComp
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85-20SU U2
+U 1 1 60FD1067
+P 4000 3450
+F 0 "U2" H 3471 3496 50  0000 R CNN
+F 1 "ATtiny85-20SU" H 3471 3405 50  0000 R CNN
+F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 4000 3450 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 4000 3450 50  0001 C CNN
+	1    4000 3450
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
