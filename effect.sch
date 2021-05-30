@@ -45,7 +45,7 @@ U 1 1 60BBD07C
 P 2200 5700
 F 0 "RV1" V 2085 5700 50  0000 C CNN
 F 1 "gain 1 (a500k)" V 1994 5700 50  0000 C CNN
-F 2 "" H 2200 5700 50  0001 C CNN
+F 2 "Potentiometer_THT:alpha_pot_16mm" H 2200 5700 50  0001 C CNN
 F 3 "~" H 2200 5700 50  0001 C CNN
 	1    2200 5700
 	0    -1   -1   0   
@@ -356,7 +356,7 @@ U 1 1 60BCBAEA
 P 2200 6200
 F 0 "RV2" V 2085 6200 50  0000 C CNN
 F 1 "gain 2 (a500k)" V 1994 6200 50  0000 C CNN
-F 2 "" H 2200 6200 50  0001 C CNN
+F 2 "Potentiometer_THT:alpha_pot_16mm" H 2200 6200 50  0001 C CNN
 F 3 "~" H 2200 6200 50  0001 C CNN
 	1    2200 6200
 	0    -1   -1   0   
@@ -391,7 +391,7 @@ AR Path="/60BDFBA0" Ref="RV?"  Part="1"
 AR Path="/60B9FFB7/60BDFBA0" Ref="RV3"  Part="1" 
 F 0 "RV3" V 5300 6000 50  0000 R CNN
 F 1 "tone 1 (b100k)" V 5300 5800 50  0000 R CNN
-F 2 "" H 5450 5550 50  0001 C CNN
+F 2 "Potentiometer_THT:alpha_pot_16mm" H 5450 5550 50  0001 C CNN
 F 3 "~" H 5450 5550 50  0001 C CNN
 	1    5450 5550
 	0    -1   -1   0   
@@ -406,7 +406,7 @@ AR Path="/60BE2294" Ref="RV?"  Part="1"
 AR Path="/60B9FFB7/60BE2294" Ref="RV4"  Part="1" 
 F 0 "RV4" V 5300 6500 50  0000 R CNN
 F 1 "tone 2 (b100k)" V 5300 6300 50  0000 R CNN
-F 2 "" H 5450 6050 50  0001 C CNN
+F 2 "Potentiometer_THT:alpha_pot_16mm" H 5450 6050 50  0001 C CNN
 F 3 "~" H 5450 6050 50  0001 C CNN
 	1    5450 6050
 	0    -1   -1   0   
@@ -454,7 +454,7 @@ U 1 1 60BBD12D
 P 9000 5250
 F 0 "RV5" H 8931 5296 50  0000 R CNN
 F 1 "volume 1 (a100k)" H 8931 5205 50  0000 R CNN
-F 2 "" H 9000 5250 50  0001 C CNN
+F 2 "Potentiometer_THT:alpha_pot_16mm" H 9000 5250 50  0001 C CNN
 F 3 "~" H 9000 5250 50  0001 C CNN
 	1    9000 5250
 	1    0    0    1   
@@ -482,7 +482,7 @@ U 1 1 60C27070
 P 9000 6000
 F 0 "RV6" H 8931 6046 50  0000 R CNN
 F 1 "volume 2 (a100k)" H 8931 5955 50  0000 R CNN
-F 2 "" H 9000 6000 50  0001 C CNN
+F 2 "Potentiometer_THT:alpha_pot_16mm" H 9000 6000 50  0001 C CNN
 F 3 "~" H 9000 6000 50  0001 C CNN
 	1    9000 6000
 	1    0    0    1   
