@@ -30,7 +30,7 @@ U 1 1 6091F993
 P 9200 1300
 F 0 "SW1" H 9200 1535 50  0000 C CNN
 F 1 "bypass switch" H 9200 1444 50  0000 C CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical" H 9200 1300 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 9200 1300 50  0001 C CNN
 F 3 "~" H 9200 1300 50  0001 C CNN
 	1    9200 1300
 	1    0    0    -1  
@@ -45,7 +45,7 @@ U 1 1 60922E98
 P 9200 2250
 F 0 "SW2" H 9200 2485 50  0000 C CNN
 F 1 "preset switch" H 9200 2394 50  0000 C CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-AM_1x02_P2.50mm_Vertical" H 9200 2250 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 9200 2250 50  0001 C CNN
 F 3 "~" H 9200 2250 50  0001 C CNN
 	1    9200 2250
 	1    0    0    -1  
@@ -625,26 +625,15 @@ Text Label 3750 5200 2    50   ~ 0
 bypass_relay
 Wire Wire Line
 	3750 5200 3850 5200
-NoConn ~ 3850 5300
-NoConn ~ 4450 5000
 Text Label 5650 5200 2    50   ~ 0
 preset_relay
-Wire Wire Line
-	5650 5200 5750 5200
-Wire Wire Line
-	5750 5200 5750 5300
-Wire Wire Line
-	5750 5300 5800 5300
-Connection ~ 5750 5200
-Wire Wire Line
-	5750 5200 5800 5200
 Text Label 6300 4900 1    50   ~ 0
 relay_2
 Wire Wire Line
 	6300 4900 6300 5000
 Wire Wire Line
-	6400 4900 6400 5000
-Text Label 6400 4900 1    50   ~ 0
+	4450 4900 4450 5000
+Text Label 4450 4900 1    50   ~ 0
 relay_3
 $Comp
 L power:PWR_FLAG #FLG01
@@ -887,4 +876,12 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microc
 	1    4000 3450
 	1    0    0    -1  
 $EndComp
+Text Label 3750 5300 2    50   ~ 0
+preset_relay
+Wire Wire Line
+	3850 5300 3750 5300
+Wire Wire Line
+	5650 5200 5800 5200
+NoConn ~ 6400 5000
+NoConn ~ 5800 5300
 $EndSCHEMATC
