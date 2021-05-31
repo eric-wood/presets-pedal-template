@@ -58,7 +58,7 @@ Text Label 4950 3150 0    50   ~ 0
 bypass_switch
 Text Label 4950 3250 0    50   ~ 0
 preset_switch
-Text Label 2100 7450 0    50   ~ 0
+Text Label 2100 6000 0    50   ~ 0
 preset_led
 Text Label 4950 3450 0    50   ~ 0
 bypass_relay
@@ -263,12 +263,12 @@ F 3 "https://content.kemet.com/datasheets/KEM_R7002_EC2_EE2.pdf" H 1650 5500 50 
 $EndComp
 Text Label 1200 5500 2    50   ~ 0
 preset_1_in
-Text Label 1200 5900 2    50   ~ 0
+Text Label 1200 7350 2    50   ~ 0
 preset_2_in
 Wire Wire Line
 	1200 5500 1350 5500
 Wire Wire Line
-	1200 5900 1350 5900
+	1200 7350 1350 7350
 Text Label 10200 5200 0    50   ~ 0
 preset_1_in
 Wire Wire Line
@@ -297,10 +297,10 @@ preset_3_in
 Wire Wire Line
 	1200 6950 1350 6950
 Wire Wire Line
-	1200 7350 1350 7350
+	1200 5900 1350 5900
 Wire Wire Line
-	2100 7450 1950 7450
-NoConn ~ 1950 7250
+	2100 6000 1950 6000
+NoConn ~ 1950 5800
 Text Label 2100 7050 0    50   ~ 0
 preset_3_out_b
 Wire Wire Line
@@ -317,14 +317,14 @@ Text Label 8700 5750 2    50   ~ 0
 preset_3_out_a
 Wire Wire Line
 	8700 5750 8850 5750
-Text Label 2100 6000 0    50   ~ 0
+Text Label 2100 7450 0    50   ~ 0
 preset_2_out_b
 Wire Wire Line
-	2100 6000 1950 6000
-Text Label 2100 5800 0    50   ~ 0
+	2100 7450 1950 7450
+Text Label 2100 7250 0    50   ~ 0
 preset_2_out_a
 Wire Wire Line
-	2100 5800 1950 5800
+	2100 7250 1950 7250
 Text Label 8700 5450 2    50   ~ 0
 preset_2_out_a
 Wire Wire Line
@@ -349,7 +349,7 @@ Wire Wire Line
 	8700 5250 8850 5250
 Wire Wire Line
 	8850 5150 8700 5150
-Text Label 1200 7350 2    50   ~ 0
+Text Label 1200 5900 2    50   ~ 0
 5V
 $Comp
 L Device:R R1
@@ -381,7 +381,7 @@ U 1 1 60C97C9C
 P 8050 1300
 F 0 "D2" H 8043 1045 50  0000 C CNN
 F 1 "bypass" H 8043 1136 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 8050 1300 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm_compact" H 8050 1300 50  0001 C CNN
 F 3 "~" H 8050 1300 50  0001 C CNN
 	1    8050 1300
 	-1   0    0    1   
@@ -392,7 +392,7 @@ U 1 1 60C98901
 P 8050 2250
 F 0 "D3" H 8043 1995 50  0000 C CNN
 F 1 "preset" H 8043 2086 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 8050 2250 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm_compact" H 8050 2250 50  0001 C CNN
 F 3 "~" H 8050 2250 50  0001 C CNN
 	1    8050 2250
 	-1   0    0    1   
