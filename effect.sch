@@ -546,10 +546,10 @@ Connection ~ 8550 1650
 Wire Wire Line
 	8550 1650 8550 1750
 $Comp
-L Amplifier_Operational:TL072 U6
+L Amplifier_Operational:TL072 U5
 U 1 1 60C594E9
 P 6750 3750
-F 0 "U6" H 6750 4117 50  0000 C CNN
+F 0 "U5" H 6750 4117 50  0000 C CNN
 F 1 "TL072" H 6750 4026 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6750 3750 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6750 3750 50  0001 C CNN
@@ -560,58 +560,26 @@ $EndComp
 $Comp
 L Amplifier_Operational:TL072 U5
 U 3 1 60C5E124
-P 6350 1550
-F 0 "U5" H 6308 1596 50  0000 L CNN
-F 1 "TL072" H 6308 1505 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6350 1550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6350 1550 50  0001 C CNN
-F 4 "C6961" H 6350 1550 50  0001 C CNN "LCSC"
-	3    6350 1550
+P 7950 1700
+F 0 "U5" H 7908 1746 50  0000 L CNN
+F 1 "TL072" H 7908 1655 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7950 1700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 7950 1700 50  0001 C CNN
+F 4 "C6961" H 7950 1700 50  0001 C CNN "LCSC"
+	3    7950 1700
 	1    0    0    -1  
 $EndComp
-$Comp
-L Amplifier_Operational:TL072 U6
-U 3 1 60C5FF70
-P 6850 1550
-F 0 "U6" H 6808 1596 50  0000 L CNN
-F 1 "TL072" H 6808 1505 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6850 1550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6850 1550 50  0001 C CNN
-F 4 "C6961" H 6850 1550 50  0001 C CNN "LCSC"
-	3    6850 1550
-	1    0    0    -1  
-$EndComp
-Text GLabel 6250 1150 1    50   Input ~ 0
+Text GLabel 7850 1300 1    50   Input ~ 0
 9V
-Wire Wire Line
-	6250 1150 6250 1200
-Wire Wire Line
-	6250 1200 6750 1200
-Wire Wire Line
-	6750 1200 6750 1250
-Connection ~ 6250 1200
-Wire Wire Line
-	6250 1200 6250 1250
 $Comp
 L power:GND #PWR021
 U 1 1 60C68A88
-P 6250 1850
-F 0 "#PWR021" H 6250 1600 50  0001 C CNN
-F 1 "GND" H 6255 1677 50  0000 C CNN
-F 2 "" H 6250 1850 50  0001 C CNN
-F 3 "" H 6250 1850 50  0001 C CNN
-	1    6250 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR022
-U 1 1 60C694DC
-P 6750 1850
-F 0 "#PWR022" H 6750 1600 50  0001 C CNN
-F 1 "GND" H 6755 1677 50  0000 C CNN
-F 2 "" H 6750 1850 50  0001 C CNN
-F 3 "" H 6750 1850 50  0001 C CNN
-	1    6750 1850
+P 7850 2000
+F 0 "#PWR021" H 7850 1750 50  0001 C CNN
+F 1 "GND" H 7855 1827 50  0000 C CNN
+F 2 "" H 7850 2000 50  0001 C CNN
+F 3 "" H 7850 2000 50  0001 C CNN
+	1    7850 2000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -728,10 +696,10 @@ return
 Text Label 1600 1650 2    50   ~ 0
 Vref
 $Comp
-L Device:R R?
+L Device:R R4
 U 1 1 615EDD61
 P 2200 3700
-F 0 "R?" H 2270 3746 50  0000 L CNN
+F 0 "R4" H 2270 3746 50  0000 L CNN
 F 1 "1M" H 2270 3655 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2130 3700 50  0001 C CNN
 F 3 "~" H 2200 3700 50  0001 C CNN
@@ -750,4 +718,6 @@ Text Label 2200 3450 1    50   ~ 0
 Vref
 Wire Wire Line
 	2200 3450 2200 3550
+Wire Wire Line
+	7850 1300 7850 1400
 $EndSCHEMATC
