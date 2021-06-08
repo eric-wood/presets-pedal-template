@@ -653,13 +653,13 @@ $Comp
 L Amplifier_Operational:TL072 U5
 U 2 1 60E9F767
 P 3500 3900
-F 0 "U5" H 3500 4267 50  0000 C CNN
-F 1 "TL072" H 3500 4176 50  0000 C CNN
+F 0 "U5" H 3500 3550 50  0000 C CNN
+F 1 "TL072" H 3500 3650 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3500 3900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3500 3900 50  0001 C CNN
 F 4 "C6961" H 3500 3900 50  0001 C CNN "LCSC"
 	2    3500 3900
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Diode:1N4148W D4
