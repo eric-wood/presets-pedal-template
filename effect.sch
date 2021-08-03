@@ -239,7 +239,7 @@ Wire Wire Line
 Wire Wire Line
 	5550 4950 5500 4950
 Wire Wire Line
-	5950 4700 6050 4700
+	5950 4900 6050 4900
 Wire Wire Line
 	6800 4050 6800 4800
 Wire Wire Line
@@ -340,7 +340,7 @@ F 3 "~" H 4500 5550 50  0001 C CNN
 	1    4500 5550
 	0    -1   -1   0   
 $EndComp
-Text Label 6050 4900 2    50   ~ 0
+Text Label 6050 4700 2    50   ~ 0
 tone_out_1
 $Comp
 L Device:R_POT RV?
@@ -373,64 +373,64 @@ Wire Wire Line
 $Comp
 L Device:R_POT RV5
 U 1 1 60BBD12D
-P 10150 5150
-F 0 "RV5" H 10081 5196 50  0000 R CNN
-F 1 "volume 1 (a10k)" H 10081 5105 50  0000 R CNN
-F 2 "Potentiometer_THT:alpha_pot_16mm" H 10150 5150 50  0001 C CNN
-F 3 "~" H 10150 5150 50  0001 C CNN
-	1    10150 5150
+P 8850 4500
+F 0 "RV5" H 8781 4546 50  0000 R CNN
+F 1 "volume 1 (a10k)" H 8781 4455 50  0000 R CNN
+F 2 "Potentiometer_THT:alpha_pot_16mm" H 8850 4500 50  0001 C CNN
+F 3 "~" H 8850 4500 50  0001 C CNN
+	1    8850 4500
 	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR024
 U 1 1 60BBD127
-P 10150 5300
-F 0 "#PWR024" H 10150 5050 50  0001 C CNN
-F 1 "GND" H 10155 5127 50  0000 C CNN
-F 2 "" H 10150 5300 50  0001 C CNN
-F 3 "" H 10150 5300 50  0001 C CNN
-	1    10150 5300
+P 8850 4650
+F 0 "#PWR024" H 8850 4400 50  0001 C CNN
+F 1 "GND" H 8855 4477 50  0000 C CNN
+F 2 "" H 8850 4650 50  0001 C CNN
+F 3 "" H 8850 4650 50  0001 C CNN
+	1    8850 4650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_POT RV6
 U 1 1 60C27070
-P 10150 6000
-F 0 "RV6" H 10081 6046 50  0000 R CNN
-F 1 "volume 2 (a10k)" H 10081 5955 50  0000 R CNN
-F 2 "Potentiometer_THT:alpha_pot_16mm" H 10150 6000 50  0001 C CNN
-F 3 "~" H 10150 6000 50  0001 C CNN
-	1    10150 6000
+P 8850 5350
+F 0 "RV6" H 8781 5396 50  0000 R CNN
+F 1 "volume 2 (a10k)" H 8781 5305 50  0000 R CNN
+F 2 "Potentiometer_THT:alpha_pot_16mm" H 8850 5350 50  0001 C CNN
+F 3 "~" H 8850 5350 50  0001 C CNN
+	1    8850 5350
 	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR025
 U 1 1 60C27076
-P 10150 6150
-F 0 "#PWR025" H 10150 5900 50  0001 C CNN
-F 1 "GND" H 10155 5977 50  0000 C CNN
-F 2 "" H 10150 6150 50  0001 C CNN
-F 3 "" H 10150 6150 50  0001 C CNN
-	1    10150 6150
+P 8850 5500
+F 0 "#PWR025" H 8850 5250 50  0001 C CNN
+F 1 "GND" H 8855 5327 50  0000 C CNN
+F 2 "" H 8850 5500 50  0001 C CNN
+F 3 "" H 8850 5500 50  0001 C CNN
+	1    8850 5500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10300 6000 10450 6000
+	9000 5350 9150 5350
 Wire Wire Line
-	10450 5150 10300 5150
+	9150 4500 9000 4500
 Wire Wire Line
-	10150 4850 10150 5000
+	8850 4200 8850 4350
 $Comp
 L Amplifier_Operational:TL072 U5
 U 1 1 60C594E9
 P 6350 4800
-F 0 "U5" H 6350 5167 50  0000 C CNN
-F 1 "TL072" H 6350 5076 50  0000 C CNN
+F 0 "U5" H 6400 4450 50  0000 C CNN
+F 1 "TL072" H 6400 4550 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6350 4800 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6350 4800 50  0001 C CNN
 F 4 "C6961" H 6350 4800 50  0001 C CNN "LCSC"
 	1    6350 4800
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L Amplifier_Operational:TL072 U5
@@ -524,41 +524,26 @@ Wire Wire Line
 Wire Wire Line
 	7700 4800 7400 4800
 Connection ~ 7400 4800
-Text Label 8600 4800 2    50   ~ 0
+Text Label 10100 4800 2    50   ~ 0
 volume_out
 Wire Wire Line
-	8800 4800 8600 4800
-Text HLabel 8800 4800 2    50   Output ~ 0
+	10300 4800 10100 4800
+Text HLabel 10300 4800 2    50   Output ~ 0
 return
 Wire Wire Line
 	10450 1000 10450 1100
 Wire Wire Line
-	9850 5700 10150 5700
+	8550 5050 8850 5050
 Wire Wire Line
-	10150 5700 10150 5850
+	8850 5050 8850 5200
 Text GLabel 10450 1800 3    50   Input ~ 0
 -9V
 Wire Wire Line
 	10450 1800 10450 1700
-$Comp
-L power:GND #PWR021
-U 1 1 610A9824
-P 5800 4550
-F 0 "#PWR021" H 5800 4300 50  0001 C CNN
-F 1 "GND" H 5805 4377 50  0000 C CNN
-F 2 "" H 5800 4550 50  0001 C CNN
-F 3 "" H 5800 4550 50  0001 C CNN
-	1    5800 4550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 4550 5950 4550
-Wire Wire Line
-	5950 4550 5950 4700
 Wire Wire Line
 	1900 5050 2750 5050
 Wire Wire Line
-	9800 4850 10150 4850
+	8500 4200 8850 4200
 $Comp
 L power:GND #PWR0101
 U 1 1 610F9AAE
@@ -589,7 +574,7 @@ Wire Wire Line
 	6300 1450 6200 1450
 Wire Wire Line
 	6300 1750 6200 1750
-Text GLabel 5900 3050 3    50   Input ~ 0
+Text GLabel 5900 2950 2    50   Input ~ 0
 -9V
 $Comp
 L power:GND #PWR?
@@ -606,21 +591,19 @@ F 3 "" H 5700 2950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5800 2950 5900 2950
-Wire Wire Line
-	5900 2950 5900 3050
 Text GLabel 5700 1150 1    50   Input ~ 0
 9V
 $Comp
 L power:GND #PWR?
 U 1 1 610BAB65
-P 4650 2350
+P 5050 2250
 AR Path="/610BAB65" Ref="#PWR?"  Part="1" 
 AR Path="/60B9FFB7/610BAB65" Ref="#PWR027"  Part="1" 
-F 0 "#PWR027" H 4650 2100 50  0001 C CNN
-F 1 "GND" H 4655 2177 50  0000 C CNN
-F 2 "" H 4650 2350 50  0001 C CNN
-F 3 "" H 4650 2350 50  0001 C CNN
-	1    4650 2350
+F 0 "#PWR027" H 5050 2000 50  0001 C CNN
+F 1 "GND" H 4900 2200 50  0000 C CNN
+F 2 "" H 5050 2250 50  0001 C CNN
+F 3 "" H 5050 2250 50  0001 C CNN
+	1    5050 2250
 	1    0    0    -1  
 $EndComp
 Text Label 6300 1450 0    50   ~ 0
@@ -649,8 +632,6 @@ Wire Wire Line
 	5100 1550 5200 1550
 Wire Wire Line
 	5100 1450 5200 1450
-Wire Wire Line
-	4650 2350 5200 2350
 Text Label 2550 2400 0    50   ~ 0
 gain_in
 Wire Wire Line
@@ -686,9 +667,9 @@ Text Label 4250 6050 2    50   ~ 0
 tone_b
 Text Label 7700 4800 0    50   ~ 0
 volume_in
-Text Label 9800 4850 2    50   ~ 0
+Text Label 8500 4200 2    50   ~ 0
 volume_a
-Text Label 9850 5700 2    50   ~ 0
+Text Label 8550 5050 2    50   ~ 0
 volume_b
 Text HLabel 5100 2450 0    50   Input ~ 0
 preset
@@ -709,7 +690,7 @@ Wire Wire Line
 	7450 2450 7500 2450
 Wire Wire Line
 	8650 1450 8550 1450
-Text GLabel 8250 3050 3    50   Input ~ 0
+Text GLabel 8250 2950 2    50   Input ~ 0
 -9V
 $Comp
 L power:GND #PWR?
@@ -726,21 +707,19 @@ F 3 "" H 8050 2950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8150 2950 8250 2950
-Wire Wire Line
-	8250 2950 8250 3050
 Text GLabel 8050 1150 1    50   Input ~ 0
 9V
 $Comp
 L power:GND #PWR?
 U 1 1 611A889A
-P 7000 2350
+P 7400 2250
 AR Path="/611A889A" Ref="#PWR?"  Part="1" 
 AR Path="/60B9FFB7/611A889A" Ref="#PWR029"  Part="1" 
-F 0 "#PWR029" H 7000 2100 50  0001 C CNN
-F 1 "GND" H 7005 2177 50  0000 C CNN
-F 2 "" H 7000 2350 50  0001 C CNN
-F 3 "" H 7000 2350 50  0001 C CNN
-	1    7000 2350
+F 0 "#PWR029" H 7400 2000 50  0001 C CNN
+F 1 "GND" H 7250 2200 50  0000 C CNN
+F 2 "" H 7400 2250 50  0001 C CNN
+F 3 "" H 7400 2250 50  0001 C CNN
+	1    7400 2250
 	1    0    0    -1  
 $EndComp
 Text Label 8650 1750 0    50   ~ 0
@@ -759,8 +738,6 @@ Wire Wire Line
 	7450 1550 7550 1550
 Wire Wire Line
 	7450 1450 7550 1450
-Wire Wire Line
-	7000 2350 7550 2350
 Wire Wire Line
 	7500 2450 7500 2550
 Wire Wire Line
@@ -807,8 +784,27 @@ Text Label 7450 2150 2    50   ~ 0
 volume_out_b
 Text Label 8650 2050 0    50   ~ 0
 volume_out
-Text Label 10450 5150 0    50   ~ 0
+Text Label 9150 4500 0    50   ~ 0
 volume_out_a
-Text Label 10450 6000 0    50   ~ 0
+Text Label 9150 5350 0    50   ~ 0
 volume_out_b
+$Comp
+L power:GND #PWR?
+U 1 1 614849D6
+P 5950 4900
+F 0 "#PWR?" H 5950 4650 50  0001 C CNN
+F 1 "GND" H 5955 4727 50  0000 C CNN
+F 2 "" H 5950 4900 50  0001 C CNN
+F 3 "" H 5950 4900 50  0001 C CNN
+	1    5950 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 2250 5200 2250
+Wire Wire Line
+	5200 2250 5200 2350
+Wire Wire Line
+	7400 2250 7550 2250
+Wire Wire Line
+	7550 2250 7550 2350
 $EndSCHEMATC
